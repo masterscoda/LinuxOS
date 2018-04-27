@@ -1,6 +1,4 @@
 Scott Bossard
-CSCI 5103
-
 
 **Please note: You will have to remove consumer.txt, producer_black.txt,
 producer_red.txt and producer_white.txt from directory if you want to
