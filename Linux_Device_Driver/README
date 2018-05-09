@@ -1,0 +1,21 @@
+Scott Bossard
+ID: 4311794
+CSCI 5103
+Virtual Machine: csel-x12-umh.cselabs.umn.edu
+HW 7: Character Device
+
+Instructions to run:
+Step 1: Unzip folder in working directory
+Step 2: open a terminal in the folder you unziped
+Step 3: Type 'make' in terminal. This will make the files in the subdirectories
+Step 4: Type 'cd scullbuffer'
+Step 5: Type 'sudo chmod 777 scull_load'
+Step 6: Type 'sudo chmod 777 scull_unload'
+Step 7: Type 'sudo ./scull_unload'
+Step 8: Type 'sudo ./scull_load'
+Step 9: Type 'cd -' to Go back 
+Step 10: Type 'cd prod_cons' to enter producer/consumer directory
+Step 11: Type 'sudo chmod 777 test[1-5]' for each test [1-5]
+Step 12: Type './test[1-5]' to run a test.
+Step 13: Repeat Step 9 until you have run all the tests
+Step 14: View resulting textfiles

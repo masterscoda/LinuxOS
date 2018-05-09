@@ -1,0 +1,15 @@
+#Scott Bossard 4/17/18
+#TestCase 5
+echo "**********************Test Case 5*************************"
+echo ""
+echo "Start a producer which will produce 50 items before exiting."
+echo ""
+echo "Start two consumers which will consume the 50 deposited items."
+echo ""
+echo "The producer and the two consumers should exit normally after all 50 items are produced and consumed."
+echo ""
+echo "Running Test Case 5......"
+./producer 50 BLACK > Testcase5_Producer_Results
+./consumer 25 > Testcase5_Consumer_Results1
+./consumer 25 > Testcase5_Consumer_Results2
+echo "...Finished"

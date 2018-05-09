@@ -1,0 +1,15 @@
+#Scott Bossard 4/17/18
+#TestCase 4
+echo "**********************Test Case 4*************************"
+echo ""
+echo "Start two producers which will both produce 50 items each before exiting (total = 100 items)."
+echo ""
+echo "Start a consumer which will try to consume 200 items before exiting."
+echo ""
+echo "All the producers and the consumer should exit normally after producing and consuming all the items."
+echo ""
+echo "Running Test Case 4......"
+./producer 50 BLACK > Testcase4_Producer_Results1
+./producer 50 RED > Testcase4_Producer_Results2
+./consumer 200 > Testcase4_Consumer_Results
+echo "...Finished"

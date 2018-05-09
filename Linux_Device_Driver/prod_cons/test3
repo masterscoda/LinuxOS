@@ -1,0 +1,16 @@
+#Scott Bossard 4/17/18
+#TestCase 3
+echo "**********************Test Case 3*************************"
+echo ""
+echo "Start a producer which will produce 50 items before exiting"
+echo ""
+echo "Start a consumer which will try to consume 100 items before exiting"
+echo ""
+echo "After the producer calls release(), the consumer should not go to sleep waiting for items to be inserted
+into the buffer, and should instead get a return value of 0 from the read() call (Because the producer
+count is 0)"
+echo ""
+echo "Running Test Case 3......"
+./producer 50 BLACK > Testcase3_Producer_Results
+./consumer 100 > Testcase3_Consumer_Results
+echo "...Finished"

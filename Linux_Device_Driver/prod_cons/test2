@@ -1,0 +1,16 @@
+#Scott Bossard 4/17/18
+#TestCase 2
+echo "**********************Test Case 2*************************"
+echo ""
+echo "Start a producer which will produce 50 items before exiting"
+echo ""
+echo "Start a consumer which will try to consume only 10 items before exiting"
+echo ""
+echo "After the consumer calls release(), the producer should not go to sleep when trying to write items into the
+already full buffer, and should instead get a return value of 0 from the write() call. (Because the consumer
+count is 0)"
+echo ""
+echo "Running Test Case 2......"
+./producer 50 BLACK > Testcase2_Producer_Results
+./consumer 10 > Testcase2_Consumer_Results
+echo "...Finished"
